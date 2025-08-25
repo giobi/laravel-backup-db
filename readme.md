@@ -1,5 +1,14 @@
 # Laravel Backup Database Manager
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![PHP Version](https://img.shields.io/badge/PHP-%5E8.1-blue.svg)](https://www.php.net/)
+[![Laravel Version](https://img.shields.io/badge/Laravel-%5E10.0|%5E11.0-red.svg)](https://laravel.com/)
+[![Status: Alpha](https://img.shields.io/badge/Status-Alpha-orange.svg)](https://github.com/giobi/laravel-backup-db)
+[![Packagist Version](https://img.shields.io/packagist/v/giobi/laravel-backup-db)](https://packagist.org/packages/giobi/laravel-backup-db)
+[![Packagist Downloads](https://img.shields.io/packagist/dt/giobi/laravel-backup-db)](https://packagist.org/packages/giobi/laravel-backup-db)
+
+> **⚠️ ALPHA STATUS**: This package is currently in alpha development and has not been thoroughly tested in production environments. Use at your own risk and please report any issues you encounter.
+
 A Laravel package that extends [Spatie's Laravel Backup](https://github.com/spatie/laravel-backup) functionality with a clean web interface for database backup management and restoration.
 
 ## ✨ Features
@@ -19,6 +28,8 @@ A Laravel package that extends [Spatie's Laravel Backup](https://github.com/spat
 - [Spatie Laravel Backup](https://github.com/spatie/laravel-backup) package
 
 ## 📦 Installation
+
+> **⚠️ Alpha Warning**: This package is in alpha development. It is recommended to test thoroughly in a development environment before considering any production use.
 
 1. Install the package via Composer:
 
@@ -137,6 +148,7 @@ Route::middleware(['web', 'auth'])->group(function () {
 
 ## ⚠️ Security Considerations
 
+- **Alpha Status**: This package is currently in alpha development and has not been extensively tested. Use with caution in production environments.
 - **Data Overwrite**: Database restoration overwrites all current data. There's no undo functionality.
 - **Access Control**: Ensure only authorized users can access the backup interface.
 - **File Validation**: The package validates backup files before processing.

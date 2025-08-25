@@ -2,7 +2,9 @@
 
 All notable changes to `laravel-backup-db` will be documented in this file.
 
-## 1.0.0 - 2024-01-01
+## 1.0.0-alpha - 2024-01-01
+
+**⚠️ ALPHA RELEASE - NOT PRODUCTION READY**
 
 ### Added
 - Initial release of Laravel Backup Database Manager
@@ -23,3 +25,8 @@ All notable changes to `laravel-backup-db` will be documented in this file.
 - CSRF token validation on all forms
 - Path validation to prevent directory traversal
 - Secure temporary file handling during restoration
+
+### Notice
+- This is an alpha release and has not been thoroughly tested in production environments
+- Please use with caution and report any issues encountered
+- Extensive testing is recommended before any production use
